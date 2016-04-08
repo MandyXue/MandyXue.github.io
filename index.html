@@ -101,7 +101,7 @@
     motion: true,
     duoshuo: {
       userId: 0,
-      author: 'Author'
+      author: '博主'
     }
   };
 </script>
@@ -109,7 +109,7 @@
   <title> Mandy Xue </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -166,7 +166,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            Startseite
+            首页
           </a>
         </li>
       
@@ -176,7 +176,7 @@
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            Über
+            关于
           </a>
         </li>
       
@@ -186,7 +186,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            Archiv
+            归档
           </a>
         </li>
       
@@ -196,7 +196,7 @@
             
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
@@ -252,7 +252,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-03-19T22:33:21+08:00" content="2016-03-19">
               2016-03-19
             </time>
@@ -281,47 +281,12 @@
 
       
         
-          
-            <h1 id="UI-Demo-Tutorial"><a href="#UI-Demo-Tutorial" class="headerlink" title="UI Demo Tutorial"></a>UI Demo Tutorial</h1><p>我们拿一个普通的社交软件的例子来做示范，假设我们要做一个与微博类似的客户端，那么将从下面几个方面开始考虑。</p>
-<h2 id="整体布局"><a href="#整体布局" class="headerlink" title="整体布局"></a>整体布局</h2><p><strong>插播</strong>：很多人觉得自己不会设计，看到图形和颜色就头大，但是我认为，我们只是没有好的灵感来源而已。和写文章一样，天下设计也是一大“抄”。“抄”的过程，就是取其精华、去其糟粕的过程，我们只要有基本的鉴赏能力，就能做出一个符合规范和审美的“不错的”app设计。</p>
-<p><strong>此处为正文开始</strong>：<br>那么我们要“抄”，第一步就是按照我们的需求来拟定一个整体的布局。由于我讲的主题更偏向“程序员做设计”，所以我们这次就不考虑美观上的创新或项目idea的创新了。</p>
-<p><strong>好的，现在进入正题</strong>：<br>作为一个社交软件，我们先来看一下微博：</p>
-<p><img src="http://cl.ly/3h2K2Q121g3g/weibo%E5%89%AF%E6%9C%AC.png" width="300"></p>
-<p>我个人是不太喜欢微博默认的橙色配色的，但是这个配色其实很符合需求，然后微博这个底部的tab bar也是比较简单清楚的。（这里提醒一下，iOS设计里的tabbar一般都是要求既有icon又有文字的，这样不容易造成用户的误解）</p>
-<p>那我们再看一下它不够友好或者我们不喜欢的地方。我从自己的角度出发，不太喜欢下面那个tabbar中间按钮的圆角矩形的设计，我更偏向于圆形的设计，就像这样：</p>
-<p><img src="http://ui4app.qiniudn.com/photo/app/52abbcfecb7e84f12b8b6a43.jpg" width="300"></p>
-<p>所以我决定在我们的设计中选用圆形button。</p>
-<p>然后接下来的一步是设计基础配色。我认为，橙红色系一般比较适用于较日常（微博）、娱乐性（唱吧、全民K歌）的社交app，而蓝色系则更适用于商务（钉钉）、实名制（facebook）等类型的社交app，然后绿色系一般偏向环保、健康等类型的社交app。假设我们想做一个轻商务型的app，例如车友之间的社交软件，那么我选择蓝色作为基调，就像这样：</p>
-<ol>
-<li><p>我们先<a href="https://dribbble.com/search?q=ios++blue" target="_blank" rel="external">搜搜看</a>有没有<code>ios blue</code>关键词的设计（:new_moon_with_face:就是这么简单粗暴）<br> 发现了<a href="https://dribbble.com/shots/1131223-iOS-7-University-App/attachments/144919" target="_blank" rel="external">这个</a>，看上去不错：</p>
-<p> <img src="http://cl.ly/1e1h3p1W1X1Y/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-21%20%E4%B8%8B%E5%8D%882.59.12.png" width="600"></p>
-</li>
-<li><p>好的我们着手开始抄，抄完效果如下：</p>
-<p> <img src="http://cl.ly/2w1u0v3b3337/Image%202016-03-21%20at%203.04.38%20%E4%B8%8B%E5%8D%88.png" width="400"></p>
-</li>
-</ol>
-<p>接下来，我们照抄tabbar布局（喂）：首页、消息、发布、发现、我的:new_moon_with_face:，这里的icon我也不是很喜欢，所以准备换个风格，那么我们来看看有没有我们喜欢的风格：</p>
-<ol>
-<li><p><a href="https://dribbble.com/search?q=tabbar" target="_blank" rel="external">搜一搜</a><code>tabbar</code>关键词，找到了<a href="https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free" target="_blank" rel="external">这个</a>，感觉不错：</p>
-<p> <img src="https://d13yacurqjgara.cloudfront.net/users/2404/screenshots/1925069/lynny.png" width="400"></p>
-</li>
-<li><p>好的我们又着手开始抄，效果如下：</p>
-<p> <img src="http://cl.ly/003V0i3Q2S33/Image%202016-03-21%20at%203.46.47%20%E4%B8%8B%E5%8D%88.png" width="400"></p>
-</li>
-</ol>
-<p>至此，我们的整体布局框架就搭好了。</p>
-<h2 id="每个界面的布局（这里拿一个界面作为例子）"><a href="#每个界面的布局（这里拿一个界面作为例子）" class="headerlink" title="每个界面的布局（这里拿一个界面作为例子）"></a>每个界面的布局（这里拿一个界面作为例子）</h2><p>我这里拿“我的”做例子主要是比较简单而且实用。</p>
-<p>假设我现在没有什么构思，那么我又开始在dribbble上<a href="https://dribbble.com/shots/876515-Search-for-friends-list" target="_blank" rel="external">搜索</a>了，看到了这个：</p>
-<p><img src="http://cl.ly/322n1X1M290R/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-21%20%E4%B8%8B%E5%8D%883.54.41.png" width="400"></p>
-<p>我觉得他的tableview cell设计很符合我的想法，那么我又开始抄了:new_moon_with_face:</p>
-<p>我的实现结果如下：</p>
-<p><img src="http://cl.ly/1Y0e2v3Z1P0C/%E6%88%91%E7%9A%84.png" width="500"></p>
-<p>这里就可以用到之前推荐的几个插件了！</p>
-<h2 id="跳转"><a href="#跳转" class="headerlink" title="跳转"></a>跳转</h2><p>由于时间关系，这次暂且不讲，不过跳转也是一门学问……</p>
-<p>====</p>
-<p>Copyright 2016 &copy; Mandy Xue</p>
-
-          
+          <h1 id="UI-Demo-Tutorial"><a href="#UI-Demo-Tutorial" class="headerlink" title="UI Demo Tutorial"></a>UI Demo Tutorial</h1><p>我们拿一个普通的社交软件的例子来做示范，假设我们要做一个与微博类似的客户端，那么将从下面几个方面开始考虑。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/19/Demo_Tutorial/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -382,7 +347,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-03-19T22:33:21+08:00" content="2016-03-19">
               2016-03-19
             </time>
@@ -411,185 +376,12 @@
 
       
         
-          
-            <h1 id="从UI的角度讲控件"><a href="#从UI的角度讲控件" class="headerlink" title="从UI的角度讲控件"></a>从UI的角度讲控件</h1><h2 id="基本控件"><a href="#基本控件" class="headerlink" title="基本控件"></a>基本控件</h2><p>不管开发还是设计，我们都要首先知道每一种控件的名字</p>
-<ol>
-<li><p>Content Views</p>
-<ul>
-<li>TextView</li>
-<li><p>TableView</p>
-<p>  <img src="http://cl.ly/0t1Y41191v2T/TableView.png" width="350"></p>
-</li>
-<li>ScrollView</li>
-<li>ImageView</li>
-<li><p>CollectionView</p>
-<p>  <img src="http://cl.ly/2C2V0j1g3i0K/Image%202016-03-18%20at%2011.19.10%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
-</li>
-</ul>
-</li>
-<li><p>Bars</p>
-<ul>
-<li><p>StatusBar</p>
-<p>  <img src="http://cl.ly/041r3F002O24/Status%20Bar.png" width="350"></p>
-</li>
-<li><p>NavigationBar</p>
-<p>  <img src="http://cl.ly/0J0i2P1d2o12/Navigation%20Bar.png" width="350"></p>
-</li>
-<li><p>TabBar</p>
-<p>  <img src="http://cl.ly/040r353a2D1H/Image%202016-03-18%20at%2011.17.46%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
-</li>
-<li>ToolBar</li>
-<li>SearchBar</li>
-</ul>
-</li>
-<li><p>Controls</p>
-<ul>
-<li>Button</li>
-<li>Label</li>
-<li>TextField</li>
-<li><p>Switch</p>
-<p>  <img src="http://cl.ly/2r0H2K0i0Y0U/Switch.png" width="50"></p>
-</li>
-<li><p>Slider</p>
-<p>  <img src="http://cl.ly/0y2d0Z2C1l2g/Image%202016-03-18%20at%2011.23.20%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
-</li>
-<li><p>Segment</p>
-<p>  <img src="http://cl.ly/3u3H3H3M3v45/Image%202016-03-18%20at%2011.23.09%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
-</li>
-<li><p>DatePicker</p>
-<p>  <img src="http://cl.ly/3F092c0q3M2D/Image%202016-03-18%20at%2011.22.31%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
-</li>
-</ul>
-</li>
-<li><p>Temporary Views</p>
-<ul>
-<li><p>AlertView</p>
-<p>  <img src="http://cl.ly/1F3M1C3E2X3r/Image%202016-03-18%20at%2011.23.49%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
-</li>
-<li><p>ActionSheet</p>
-<p>  <img src="http://cl.ly/3e1B0i1T421p/Image%202016-03-18%20at%2011.24.06%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
-</li>
-<li><p>ActivityView</p>
-<p>  <img src="http://cl.ly/3u021y450B3A/Image%202016-03-18%20at%2011.18.50%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
-</li>
-<li><p>Popover</p>
-<p>  <img src="http://cl.ly/1e0h2l1e1N2y/Image%202016-03-18%20at%2011.19.48%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
-</li>
-</ul>
-</li>
-<li><p>More…</p>
-</li>
-</ol>
-<h2 id="iOS设计的基本纲领（摘抄自Human-Interface-Guidelines-neutral-face-）"><a href="#iOS设计的基本纲领（摘抄自Human-Interface-Guidelines-neutral-face-）" class="headerlink" title="iOS设计的基本纲领（摘抄自Human Interface Guidelines:neutral_face:）"></a>iOS设计的基本纲领（摘抄自Human Interface Guidelines:neutral_face:）</h2><ol>
-<li><p>iOS三大设计原则：</p>
-<ol>
-<li>Deference：UI帮助用户理解内容，不能分散用户对内容的注意力</li>
-<li>Clarity：文字、图标清晰，功能驱动设计</li>
-<li>Depth：视觉层次感</li>
-</ol>
-</li>
-<li><p>充分利用整个屏幕；减少拟物化设计；使用半透明UI</p>
-</li>
-<li>留白；使用系统字体；bar上使用无边框按钮</li>
-<li>AutoLayout</li>
-</ol>
-<h2 id="没有设计师？程序员也可以做出漂亮的设计"><a href="#没有设计师？程序员也可以做出漂亮的设计" class="headerlink" title="没有设计师？程序员也可以做出漂亮的设计"></a>没有设计师？程序员也可以做出漂亮的设计</h2><ol>
-<li><p>Sketch模版</p>
-<ul>
-<li>iOS模版</li>
-<li>iOS app图标模版</li>
-<li>Web模版</li>
-</ul>
-</li>
-<li><p>界面设计</p>
-<ul>
-<li>用什么做参考？</li>
-<li>如何优雅地“借鉴”<ul>
-<li><a href="https://github.com/xdliu002/TAC_communication/blob/Mandy/TAC_UIDesign/Demo_Tutorial.md" target="_blank" rel="external">详细教程</a></li>
-<li><a href="http://cl.ly/0B1s3J3I0v0u/download/UIDesign_Demo.sketch" target="_blank" rel="external">下载Demo</a></li>
-</ul>
-</li>
-<li>注意细节</li>
-</ul>
-</li>
-<li><p>Sketch一些有用的插件</p>
-<ul>
-<li><p>Steps:</p>
-<ol>
-<li>Sketch Toolbox <a href="http://sketchtoolbox.com/" target="_blank" rel="external">下载 :arrow_down:</a></li>
-<li>去系统设置给个权限</li>
-<li>打开toolbox搜索想要的插件下载就好啦～</li>
-</ol>
-</li>
-<li><p>插件推荐（<a href="http://www.sketchcn.com/sketch-tips-tricks-1.html" target="_blank" rel="external">参考资料</a>）</p>
-<ol>
-<li>Content Generator Sketch Plugin</li>
-<li>Sketch Measure（我也是最近才知道，这个真的好用到爆炸了:boom:）</li>
-<li>Rename It</li>
-<li>More…（欢迎分享:hushed:)</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="设计与编程的结合"><a href="#设计与编程的结合" class="headerlink" title="设计与编程的结合"></a>设计与编程的结合</h2><ol>
-<li><p>什么是1x、2x、3x图片？怎么导出？</p>
-<ul>
-<li>首先，<strong>PPI</strong>是每英寸的像素数目，我们都知道Retina和非Retina的区别，自然Retina PPI更高。</li>
-<li><strong>像素</strong>（pixels/px）是数码显示上最小的计算单位。所以在同一个屏幕尺寸，更高的PPI，就能显示更多的像素，同时渲染的内容也会更清晰。</li>
-<li>而<strong>点</strong>（points/pt）是一个与分辨率无关的计算单位（真实尺寸）。根据屏幕的像素密度，一个点可以包含多个像素（例如，在标准Retina显示屏上1pt里有2x2个像素）。</li>
-<li><p>当为多种显示设备设计时，应该以“点”为单位作参考，但仍然需要以3种不同的分辨率导出你的素材，不管是在哪种分辨率下设计应用。</p>
-<p>| Device         | Resolution Ratio | PPI   | Size  |<br>| ————– |:—————-:|:—–:| —–:|<br>| iPhone 6 Plus  | <code>@3x</code>        | 401   | 5.5”  |<br>| iPhone 6       | <code>@2x</code>        | 326   | 4.7”  |<br>| iPhone 5/5S/5C | <code>@2x</code>        | 326   | 4.0”  |<br>| iPhone 4/4S    | <code>@2x</code>        | 326   | 3.5”  |<br>| iPhone 1/2/3   | <code>@1x</code>        | 163   | 3.5”  |<br>| iPad Air/4     | <code>@2x</code>        | 264   | 9.7”  |<br>| iPad Mini2/3   | <code>@2x</code>        | 326   | 7.9”  |<br>| Other iPad     | <code>@1x</code>        | 132   | /     |</p>
-</li>
-<li><p>Sketch导出方法介绍：</p>
-<ol>
-<li>Make Exportable</li>
-<li>Export</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>如何切图？什么样的图需要切？<br> 简单来说就是“自定义”的图。<br> 一般就是这几类：</p>
-<ul>
-<li>icon (selected/unselected)</li>
-<li>额…好像其他也没有什么了，一般icon切的最多</li>
-</ul>
-</li>
-<li><p>专业的设计师是需要标出尺寸的！<br> 现在呢，如果你用PS我也不知道什么好方法，不过我们的sketch插件已经解决了这个可怕的问题:sunglasses:</p>
-</li>
-</ol>
-<h2 id="从设计到编程，编程中有关UI的小tips"><a href="#从设计到编程，编程中有关UI的小tips" class="headerlink" title="从设计到编程，编程中有关UI的小tips"></a>从设计到编程，编程中有关UI的小tips</h2><ol>
-<li>@IBOutlet</li>
-<li>User Defined Runtime Attributes</li>
-<li>多Storyboard</li>
-<li>屏幕旋转</li>
-</ol>
-<h2 id="iOS设计的几个注意事项"><a href="#iOS设计的几个注意事项" class="headerlink" title="iOS设计的几个注意事项"></a>iOS设计的几个注意事项</h2><ol>
-<li>参考其他应用设计时，请<strong>务必</strong>使用iOS设备下的应用（否则风格会跑偏）</li>
-<li>设计以<strong>简洁</strong>为主，颜色不要过多，图片质量要过硬</li>
-<li>设计是为了特定用户群做的，没有必要满足所有人的要求，所以<strong>不要怕有人说丑</strong></li>
-<li><strong>整体风格统一！整体风格统一！整体风格统一！重要的话说三遍！</strong></li>
-</ol>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
-<li><a href="https://dribbble.com/" target="_blank" rel="external">Dribbble</a></li>
-<li><a href="https://jp.pinterest.com/" target="_blank" rel="external">Pinterest</a></li>
-<li><a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/" target="_blank" rel="external">iOS Human Interface Guidelines</a></li>
-<li><a href="http://isux.tencent.com/ios8-human-interface-guidelines.html" target="_blank" rel="external">iOS Human Interface Guidelines 中文版</a></li>
-<li><a href="https://designcode.io/sketch" target="_blank" rel="external">Learn Sketch3</a></li>
-<li><a href="http://www.ui.cn/" target="_blank" rel="external">UI中国</a></li>
-<li><a href="http://www.ui4app.com/category/" target="_blank" rel="external">UI4App</a></li>
-<li><a href="http://sketchcn.com/sketch-chinese-user-manual.html" target="_blank" rel="external">Sketch中文用户手册</a></li>
-</ol>
-<p>其他的还等待大家挖掘～</p>
-<h2 id="再给大家推荐几个微信号"><a href="#再给大家推荐几个微信号" class="headerlink" title="再给大家推荐几个微信号"></a>再给大家推荐几个微信号</h2><ol>
-<li>UI设计达人：BestUIDesign</li>
-<li>CocoaChina：cocoachinabbs</li>
-<li>iOS大全：iOShub</li>
-</ol>
-<p>====</p>
-<p>Copyright 2016 &copy; Mandy Xue</p>
-
-          
+          <h1 id="从UI的角度讲控件"><a href="#从UI的角度讲控件" class="headerlink" title="从UI的角度讲控件"></a>从UI的角度讲控件</h1><h2 id="基本控件"><a href="#基本控件" class="headerlink" title="基本控件"></a>基本控件</h2><p>不管开发还是设计，我们都要首先知道每一种控件的名字</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/19/UI Design/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -658,7 +450,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
@@ -668,7 +460,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">标签</span>
               </a>
             </div>
           
@@ -714,11 +506,11 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
