@@ -1,0 +1,844 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="UI,TAC," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="从UI的角度讲控件基本控件不管开发还是设计，我们都要首先知道每一种控件的名字
+
+Content Views
+
+TextView
+TableView
+  
+
+ScrollView
+ImageView
+CollectionView
+  
+
+
+
+Bars
+
+StatusBar
+  
+
+NavigationBar
+  
+
+TabBar
+  
+
+ToolBar
+SearchBar
+
+
+Controls
+
+B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UI Design">
+<meta property="og:url" content="http://yoursite.com/2016/03/19/UI Design/index.html">
+<meta property="og:site_name" content="Mandy Xue">
+<meta property="og:description" content="从UI的角度讲控件基本控件不管开发还是设计，我们都要首先知道每一种控件的名字
+
+Content Views
+
+TextView
+TableView
+  
+
+ScrollView
+ImageView
+CollectionView
+  
+
+
+
+Bars
+
+StatusBar
+  
+
+NavigationBar
+  
+
+TabBar
+  
+
+ToolBar
+SearchBar
+
+
+Controls
+
+B">
+<meta property="og:image" content="http://cl.ly/0t1Y41191v2T/TableView.png">
+<meta property="og:image" content="http://cl.ly/2C2V0j1g3i0K/Image%202016-03-18%20at%2011.19.10%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/041r3F002O24/Status%20Bar.png">
+<meta property="og:image" content="http://cl.ly/0J0i2P1d2o12/Navigation%20Bar.png">
+<meta property="og:image" content="http://cl.ly/040r353a2D1H/Image%202016-03-18%20at%2011.17.46%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/2r0H2K0i0Y0U/Switch.png">
+<meta property="og:image" content="http://cl.ly/0y2d0Z2C1l2g/Image%202016-03-18%20at%2011.23.20%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/3u3H3H3M3v45/Image%202016-03-18%20at%2011.23.09%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/3F092c0q3M2D/Image%202016-03-18%20at%2011.22.31%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/1F3M1C3E2X3r/Image%202016-03-18%20at%2011.23.49%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/3e1B0i1T421p/Image%202016-03-18%20at%2011.24.06%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/3u021y450B3A/Image%202016-03-18%20at%2011.18.50%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:image" content="http://cl.ly/1e0h2l1e1N2y/Image%202016-03-18%20at%2011.19.48%20%E4%B8%8B%E5%8D%88.png">
+<meta property="og:updated_time" content="2016-04-08T06:15:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UI Design">
+<meta name="twitter:description" content="从UI的角度讲控件基本控件不管开发还是设计，我们都要首先知道每一种控件的名字
+
+Content Views
+
+TextView
+TableView
+  
+
+ScrollView
+ImageView
+CollectionView
+  
+
+
+
+Bars
+
+StatusBar
+  
+
+NavigationBar
+  
+
+TabBar
+  
+
+ToolBar
+SearchBar
+
+
+Controls
+
+B">
+<meta name="twitter:image" content="http://cl.ly/0t1Y41191v2T/TableView.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> UI Design | Mandy Xue </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Mandy Xue</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Programmer and UI Designer</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                UI Design
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-03-19T22:33:21+08:00" content="2016-03-19">
+              2016-03-19
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="从UI的角度讲控件"><a href="#从UI的角度讲控件" class="headerlink" title="从UI的角度讲控件"></a>从UI的角度讲控件</h1><h2 id="基本控件"><a href="#基本控件" class="headerlink" title="基本控件"></a>基本控件</h2><p>不管开发还是设计，我们都要首先知道每一种控件的名字</p>
+<ol>
+<li><p>Content Views</p>
+<ul>
+<li>TextView</li>
+<li><p>TableView</p>
+<p>  <img src="http://cl.ly/0t1Y41191v2T/TableView.png" width="350"></p>
+</li>
+<li>ScrollView</li>
+<li>ImageView</li>
+<li><p>CollectionView</p>
+<p>  <img src="http://cl.ly/2C2V0j1g3i0K/Image%202016-03-18%20at%2011.19.10%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
+</li>
+</ul>
+</li>
+<li><p>Bars</p>
+<ul>
+<li><p>StatusBar</p>
+<p>  <img src="http://cl.ly/041r3F002O24/Status%20Bar.png" width="350"></p>
+</li>
+<li><p>NavigationBar</p>
+<p>  <img src="http://cl.ly/0J0i2P1d2o12/Navigation%20Bar.png" width="350"></p>
+</li>
+<li><p>TabBar</p>
+<p>  <img src="http://cl.ly/040r353a2D1H/Image%202016-03-18%20at%2011.17.46%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
+</li>
+<li>ToolBar</li>
+<li>SearchBar</li>
+</ul>
+</li>
+<li><p>Controls</p>
+<ul>
+<li>Button</li>
+<li>Label</li>
+<li>TextField</li>
+<li><p>Switch</p>
+<p>  <img src="http://cl.ly/2r0H2K0i0Y0U/Switch.png" width="50"></p>
+</li>
+<li><p>Slider</p>
+<p>  <img src="http://cl.ly/0y2d0Z2C1l2g/Image%202016-03-18%20at%2011.23.20%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
+</li>
+<li><p>Segment</p>
+<p>  <img src="http://cl.ly/3u3H3H3M3v45/Image%202016-03-18%20at%2011.23.09%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
+</li>
+<li><p>DatePicker</p>
+<p>  <img src="http://cl.ly/3F092c0q3M2D/Image%202016-03-18%20at%2011.22.31%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
+</li>
+</ul>
+</li>
+<li><p>Temporary Views</p>
+<ul>
+<li><p>AlertView</p>
+<p>  <img src="http://cl.ly/1F3M1C3E2X3r/Image%202016-03-18%20at%2011.23.49%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
+</li>
+<li><p>ActionSheet</p>
+<p>  <img src="http://cl.ly/3e1B0i1T421p/Image%202016-03-18%20at%2011.24.06%20%E4%B8%8B%E5%8D%88.png" width="250"></p>
+</li>
+<li><p>ActivityView</p>
+<p>  <img src="http://cl.ly/3u021y450B3A/Image%202016-03-18%20at%2011.18.50%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
+</li>
+<li><p>Popover</p>
+<p>  <img src="http://cl.ly/1e0h2l1e1N2y/Image%202016-03-18%20at%2011.19.48%20%E4%B8%8B%E5%8D%88.png" width="350"></p>
+</li>
+</ul>
+</li>
+<li><p>More…</p>
+</li>
+</ol>
+<h2 id="iOS设计的基本纲领（摘抄自Human-Interface-Guidelines-neutral-face-）"><a href="#iOS设计的基本纲领（摘抄自Human-Interface-Guidelines-neutral-face-）" class="headerlink" title="iOS设计的基本纲领（摘抄自Human Interface Guidelines:neutral_face:）"></a>iOS设计的基本纲领（摘抄自Human Interface Guidelines:neutral_face:）</h2><ol>
+<li><p>iOS三大设计原则：</p>
+<ol>
+<li>Deference：UI帮助用户理解内容，不能分散用户对内容的注意力</li>
+<li>Clarity：文字、图标清晰，功能驱动设计</li>
+<li>Depth：视觉层次感</li>
+</ol>
+</li>
+<li><p>充分利用整个屏幕；减少拟物化设计；使用半透明UI</p>
+</li>
+<li>留白；使用系统字体；bar上使用无边框按钮</li>
+<li>AutoLayout</li>
+</ol>
+<h2 id="没有设计师？程序员也可以做出漂亮的设计"><a href="#没有设计师？程序员也可以做出漂亮的设计" class="headerlink" title="没有设计师？程序员也可以做出漂亮的设计"></a>没有设计师？程序员也可以做出漂亮的设计</h2><ol>
+<li><p>Sketch模版</p>
+<ul>
+<li>iOS模版</li>
+<li>iOS app图标模版</li>
+<li>Web模版</li>
+</ul>
+</li>
+<li><p>界面设计</p>
+<ul>
+<li>用什么做参考？</li>
+<li>如何优雅地“借鉴”<ul>
+<li><a href="https://github.com/xdliu002/TAC_communication/blob/Mandy/TAC_UIDesign/Demo_Tutorial.md" target="_blank" rel="external">详细教程</a></li>
+<li><a href="http://cl.ly/0B1s3J3I0v0u/download/UIDesign_Demo.sketch" target="_blank" rel="external">下载Demo</a></li>
+</ul>
+</li>
+<li>注意细节</li>
+</ul>
+</li>
+<li><p>Sketch一些有用的插件</p>
+<ul>
+<li><p>Steps:</p>
+<ol>
+<li>Sketch Toolbox <a href="http://sketchtoolbox.com/" target="_blank" rel="external">下载 :arrow_down:</a></li>
+<li>去系统设置给个权限</li>
+<li>打开toolbox搜索想要的插件下载就好啦～</li>
+</ol>
+</li>
+<li><p>插件推荐（<a href="http://www.sketchcn.com/sketch-tips-tricks-1.html" target="_blank" rel="external">参考资料</a>）</p>
+<ol>
+<li>Content Generator Sketch Plugin</li>
+<li>Sketch Measure（我也是最近才知道，这个真的好用到爆炸了:boom:）</li>
+<li>Rename It</li>
+<li>More…（欢迎分享:hushed:)</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="设计与编程的结合"><a href="#设计与编程的结合" class="headerlink" title="设计与编程的结合"></a>设计与编程的结合</h2><ol>
+<li><p>什么是1x、2x、3x图片？怎么导出？</p>
+<ul>
+<li>首先，<strong>PPI</strong>是每英寸的像素数目，我们都知道Retina和非Retina的区别，自然Retina PPI更高。</li>
+<li><strong>像素</strong>（pixels/px）是数码显示上最小的计算单位。所以在同一个屏幕尺寸，更高的PPI，就能显示更多的像素，同时渲染的内容也会更清晰。</li>
+<li>而<strong>点</strong>（points/pt）是一个与分辨率无关的计算单位（真实尺寸）。根据屏幕的像素密度，一个点可以包含多个像素（例如，在标准Retina显示屏上1pt里有2x2个像素）。</li>
+<li><p>当为多种显示设备设计时，应该以“点”为单位作参考，但仍然需要以3种不同的分辨率导出你的素材，不管是在哪种分辨率下设计应用。</p>
+<p>| Device         | Resolution Ratio | PPI   | Size  |<br>| ————– |:—————-:|:—–:| —–:|<br>| iPhone 6 Plus  | <code>@3x</code>        | 401   | 5.5”  |<br>| iPhone 6       | <code>@2x</code>        | 326   | 4.7”  |<br>| iPhone 5/5S/5C | <code>@2x</code>        | 326   | 4.0”  |<br>| iPhone 4/4S    | <code>@2x</code>        | 326   | 3.5”  |<br>| iPhone 1/2/3   | <code>@1x</code>        | 163   | 3.5”  |<br>| iPad Air/4     | <code>@2x</code>        | 264   | 9.7”  |<br>| iPad Mini2/3   | <code>@2x</code>        | 326   | 7.9”  |<br>| Other iPad     | <code>@1x</code>        | 132   | /     |</p>
+</li>
+<li><p>Sketch导出方法介绍：</p>
+<ol>
+<li>Make Exportable</li>
+<li>Export</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>如何切图？什么样的图需要切？<br> 简单来说就是“自定义”的图。<br> 一般就是这几类：</p>
+<ul>
+<li>icon (selected/unselected)</li>
+<li>额…好像其他也没有什么了，一般icon切的最多</li>
+</ul>
+</li>
+<li><p>专业的设计师是需要标出尺寸的！<br> 现在呢，如果你用PS我也不知道什么好方法，不过我们的sketch插件已经解决了这个可怕的问题:sunglasses:</p>
+</li>
+</ol>
+<h2 id="从设计到编程，编程中有关UI的小tips"><a href="#从设计到编程，编程中有关UI的小tips" class="headerlink" title="从设计到编程，编程中有关UI的小tips"></a>从设计到编程，编程中有关UI的小tips</h2><ol>
+<li>@IBOutlet</li>
+<li>User Defined Runtime Attributes</li>
+<li>多Storyboard</li>
+<li>屏幕旋转</li>
+</ol>
+<h2 id="iOS设计的几个注意事项"><a href="#iOS设计的几个注意事项" class="headerlink" title="iOS设计的几个注意事项"></a>iOS设计的几个注意事项</h2><ol>
+<li>参考其他应用设计时，请<strong>务必</strong>使用iOS设备下的应用（否则风格会跑偏）</li>
+<li>设计以<strong>简洁</strong>为主，颜色不要过多，图片质量要过硬</li>
+<li>设计是为了特定用户群做的，没有必要满足所有人的要求，所以<strong>不要怕有人说丑</strong></li>
+<li><strong>整体风格统一！整体风格统一！整体风格统一！重要的话说三遍！</strong></li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="https://dribbble.com/" target="_blank" rel="external">Dribbble</a></li>
+<li><a href="https://jp.pinterest.com/" target="_blank" rel="external">Pinterest</a></li>
+<li><a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/" target="_blank" rel="external">iOS Human Interface Guidelines</a></li>
+<li><a href="http://isux.tencent.com/ios8-human-interface-guidelines.html" target="_blank" rel="external">iOS Human Interface Guidelines 中文版</a></li>
+<li><a href="https://designcode.io/sketch" target="_blank" rel="external">Learn Sketch3</a></li>
+<li><a href="http://www.ui.cn/" target="_blank" rel="external">UI中国</a></li>
+<li><a href="http://www.ui4app.com/category/" target="_blank" rel="external">UI4App</a></li>
+<li><a href="http://sketchcn.com/sketch-chinese-user-manual.html" target="_blank" rel="external">Sketch中文用户手册</a></li>
+</ol>
+<p>其他的还等待大家挖掘～</p>
+<h2 id="再给大家推荐几个微信号"><a href="#再给大家推荐几个微信号" class="headerlink" title="再给大家推荐几个微信号"></a>再给大家推荐几个微信号</h2><ol>
+<li>UI设计达人：BestUIDesign</li>
+<li>CocoaChina：cocoachinabbs</li>
+<li>iOS大全：iOShub</li>
+</ol>
+<p>====</p>
+<p>Copyright 2016 &copy; Mandy Xue</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/UI-TAC/" rel="tag">#UI,TAC</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/19/Demo_Tutorial/" rel="prev" title="UI Demo Tutorial">
+                UI Demo Tutorial <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Mandy Xue" />
+          <p class="site-author-name" itemprop="name">Mandy Xue</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从UI的角度讲控件"><span class="nav-number">1.</span> <span class="nav-text">从UI的角度讲控件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本控件"><span class="nav-number">1.1.</span> <span class="nav-text">基本控件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS设计的基本纲领（摘抄自Human-Interface-Guidelines-neutral-face-）"><span class="nav-number">1.2.</span> <span class="nav-text">iOS设计的基本纲领（摘抄自Human Interface Guidelines:neutral_face:）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#没有设计师？程序员也可以做出漂亮的设计"><span class="nav-number">1.3.</span> <span class="nav-text">没有设计师？程序员也可以做出漂亮的设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计与编程的结合"><span class="nav-number">1.4.</span> <span class="nav-text">设计与编程的结合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从设计到编程，编程中有关UI的小tips"><span class="nav-number">1.5.</span> <span class="nav-text">从设计到编程，编程中有关UI的小tips</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS设计的几个注意事项"><span class="nav-number">1.6.</span> <span class="nav-text">iOS设计的几个注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.7.</span> <span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#再给大家推荐几个微信号"><span class="nav-number">1.8.</span> <span class="nav-text">再给大家推荐几个微信号</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mandy Xue</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
